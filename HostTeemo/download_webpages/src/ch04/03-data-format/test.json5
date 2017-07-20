@@ -1,0 +1,34 @@
+// "JSON5의 데이터 기술 예"
+// 이렇게 주석 사용 가능 
+{
+	// 키 값을 따옴표로 감싸지 않아도 됨
+	key: "value",
+	// 복수행의 문자열은 \로 구분하여 표기 가능 
+	multi_line: "This is a pen.\
+This is a eraser.\
+This is a bookmark.",
+
+	/*
+	 *  요렇게 주석의 범위 표시 가능 
+	 */
+	// 16진수 기술 가능 
+	hex_data_sample: 0xC0FFEE,
+
+	// 소수점의 0 생략 가능 
+	half_sample: .5,
+
+	// 명시적으로 +/- 기술 가능 
+	delta: +94,
+
+	// Infinity 나 NaN 기술 가능
+	value_a: Infinity,
+	value_b: NaN,
+
+	// 배열 마지막 요소에 쉼표가 있어도 ! 
+	items: [
+		"hoge",
+		"bar",
+		"foo", // 배열 마지막 요소의 쉼표 ! 
+	], // <--- 
+}
+
